@@ -46,7 +46,7 @@ Eight+ years shipping code, analytics, and AI agents across web stacks—turning
             initial={{y: 30, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay: 1.2}}
-            href="/NimishResumeSept.pdf" download 
+            href="/NimishTiwariPortfolio.pdf" download 
             className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>
                 My resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
 
