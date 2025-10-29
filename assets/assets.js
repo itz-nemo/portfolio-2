@@ -99,9 +99,9 @@ export const workData = [
     },
     {
         title: 'Data Analysis',
-        description: 'SQL analysis project',
+        description: 'Titanic Survivor Analysis',
         bgImage: '/work-2.png',
-        link: 'https://github.com/itz-nemo/sqlproject'
+        link: 'https://github.com/itz-nemo/titanic-survivor-analysis'
     },
     {
         title: 'Data Analysis',
