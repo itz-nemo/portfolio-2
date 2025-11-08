@@ -33,7 +33,9 @@ const Work = ({isDarkMode}) => {
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
       Welcome to my analytics portfolio! Explore a collection of projects showcasing my expertise in analytics and automations.</motion.p>
 
-    <motion.div
+    {/* PROJECT GRID - COMMENTED OUT */}
+    {/* All projects have been moved to the new dedicated projects webpage */}
+    {/* <motion.div
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ delay: 0.5, duration: 0.4 }}
@@ -58,13 +60,39 @@ const Work = ({isDarkMode}) => {
                 </Link>
             </motion.div>
         ))}
+    </motion.div> */}
+
+    {/* BIG MESSAGE - PROJECTS MOVED */}
+    <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.5, duration: 0.5 }}
+    className='flex items-center justify-center my-2 py-3'>
+      <div className='text-center bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 rounded-lg p-6 max-w-2xl'>
+        <motion.h2 
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.6, duration: 0.4 }}
+        className='text-4xl font-bold mb-4 text-gray-900 dark:text-white'>
+          Projects Moved! 
+        </motion.h2>
+        <motion.p 
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.7, duration: 0.4 }}
+        className='text-lg text-gray-700 dark:text-gray-200'>
+          All my projects have been shifted to a new dedicated webpage. 
+          <br />
+          <span className='font-semibold'>Click the "View all projects" button below to see them!</span>
+        </motion.p>
+      </div>
     </motion.div>
 
     <motion.a 
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ delay: 0.6, duration: 0.3 }}
-    href="https://github.com/itz-nemo" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-300 dark:text-white dark:border-white dark:hover:bg-darkHover'>
+    href="https://tranquil-heron-754.notion.site/Welcome-to-my-project-section-29b0f561cb02803a809ece74ea49a992?pvs=74" target="_blank" rel="noopener noreferrer" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-300 dark:text-white dark:border-white dark:hover:bg-darkHover'>
         View all projects
         <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='Right arrow' className='w-4'/>
     </motion.a>

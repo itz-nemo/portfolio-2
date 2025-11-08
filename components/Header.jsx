@@ -24,14 +24,14 @@ const Header = () => {
     whileInView={{y: 0, opacity: 1}}
     transition={{duration: 0.5, delay: 0.3}}
     className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-        Analyst and automation expert based in India.</motion.h1>
+        Analyst and automation enthusiast.</motion.h1>
 
         <motion.p
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.4, delay: 0.4}}
         className='max-w-2xl mx-auto font-Ovo'>
-Eight+ years shipping code, analytics, and AI agents across web stacks—turning messy data into decisions and repeatable systems.        </motion.p>
+Spent years shipping code, analytics, and AI agents across web stacks—turning messy data into decisions and repeatable systems.        </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
             <motion.a 
@@ -50,13 +50,13 @@ Eight+ years shipping code, analytics, and AI agents across web stacks—turning
             className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>
                 My resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
 
-                {/* <motion.a 
+                { <motion.a 
             initial={{y: 30, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.4, delay: 0.6}}
-            href="https://medium.com/@nimishtiwari0512"
+            href="https://tranquil-heron-754.notion.site/Welcome-to-my-project-section-29b0f561cb02803a809ece74ea49a992"
             className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent'
-            >Read my blogs <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.a> */}
+            >MY PROJECTS <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.a> }
         </div>
     </div>
   )
